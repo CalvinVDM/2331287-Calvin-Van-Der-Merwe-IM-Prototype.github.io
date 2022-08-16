@@ -1,0 +1,146 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background: url(images/websitebackground.jpg) no-repeat;
+  background-size: cover;
+  height: 360vh;
+}
+
+nav {
+  background: rgba(11, 80, 159, 0.959);
+  backdrop-filter: blur(3px);
+  height: 80px;
+  width: 100%;
+}
+
+.logo {
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 80px;
+  background-color: black;
+  margin: 0 50px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 40px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+nav ul li a {
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+}
+
+a.active {
+  background: black;
+  color: rgb(45, 42, 216);
+  padding: 5px 8px;
+  border-radius: 50px;
+}
+
+#logo {
+  width: 70px;
+  margin: 0 0 -15px -50px;
+}
+
+.burger-button {
+  font-size: 30px;
+  color: white;
+  float: right;
+  margin-right: 40px;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .burger-button {
+    display: block;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.555);
+    height: 100vh;
+    text-align: center;
+    top: 60px;
+    left: -800px;
+    transition: all 1s;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 3opx 0;
+  }
+
+  nav ul li a {
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 100px;
+  background-color: rgba(0, 0, 0, 0.659);
+  margin: 0 200px;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  background-color: rgba(49, 49, 49, 0.63);
+  margin: 0 200px;
+}
+
+h3 {
+  color: rgb(2, 0, 93);
+  text-align: center;
+  font-size: 30px;
+  
+  margin: 0 200px;
+}
+
+p {
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  
+}
+
+#HomeImg {
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#DesignImg {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
